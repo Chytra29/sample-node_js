@@ -1,5 +1,9 @@
 name: Deploy Project
-on: [push]
+on: 
+  push:
+     branches:
+      - 'main'
+      - 'releases/**'
 jobs:
   test:
     runs-on: ubuntu-latest
